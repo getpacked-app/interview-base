@@ -1,4 +1,6 @@
-html,
+const GlobalStyles = () => {
+    return <style jsx global>{`
+    html,
 body {
   padding: 0;
   margin: 0;
@@ -14,3 +16,8 @@ a {
 * {
   box-sizing: border-box;
 }
+
+    `}</style>
+}
+
+export default GlobalStyles
