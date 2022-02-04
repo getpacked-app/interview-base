@@ -134,6 +134,7 @@ const Home: NextPage = () => {
           <h1 className="title">
             Welcome to <a href="https://nextjs.org">Next.js!</a>
           </h1>
+          <h2>getpacked Technical Interview Base</h2>
 
           <p className="description">
             Get started by editing <code className="code">pages/index.tsx</code>
