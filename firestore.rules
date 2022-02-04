@@ -1,0 +1,13 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /interview/{document=**} {
+        allow read: if request.time < timestamp.date(2022, 3, 1);
+        allow write: if request.time < timestamp.date(2022, 3, 1);
+    }
+    match /{document=**} {
+      allow read: if false;
+      allow write: if false;
+    }
+  }
+}
